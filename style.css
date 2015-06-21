@@ -1,0 +1,37 @@
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+.left{
+	float: left;
+}
+.clear{
+	clear: both;
+}
+h1{
+	text-align: center;
+}
+select, input{
+	padding: 8px;
+}
+label{
+	padding: 2px;
+	display: block;
+}
+.inputs{
+	margin-top: 20px;
+}
+button{
+	margin-top: 20px;
+}
+.result{
+	margin-left: 25px;
+}
+table td, table th{
+	padding: 5px;
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+#final_valueX{
+	display: none;
+}

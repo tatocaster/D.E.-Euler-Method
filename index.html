@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+
+<div class="container">
+	<h1>Merab Kutalia, Differential Equation Project. Solving DE with Euler's Method</h1>
+
+	<div class="program left">
+		<select name="" id="de_method" class="form-control">
+		     <option value="1">Euler's Method</option>
+		     <option value="2">Euler's Modified Method</option>
+		</select>
+
+		<div class="inputs">
+			<label>Y'</label>
+	 		<input id="mainEquation" class="form-control" type="text" value="4*x*y/2+x*x"/>
+	 	</div>
+	 	<div class="inputs">
+	 		<label>Y(0)</label>
+	 		<input id="yzero" type="text" class="form-control" value="1"/>
+	 	</div>
+	 	<div class="inputs">
+	 		<label>X(0)</label>
+	 		<input id="xzero" type="text" class="form-control" value="0"/>
+ 		</div>
+
+	 	<div class="inputs">
+	 		<label>Final Value of X</label>
+	 		<input id="final_valueX" type="text" class="form-control" value="0.1"/>
+ 		</div>
+
+ 		<div class="inputs">
+	 		<label>h</label>
+	 		<input id="h" type="text"  class="form-control" value="0.3"/>
+ 		</div>
+
+ 		<button id="calculate" type="button" value="calculate">GO</button>
+
+	</div>
+
+	<div class="result left">
+		<pre>
+			<code>
+				<table>
+				 <thead>
+				   <tr>
+					   <th>n</th>
+					   <th>Xn</th>
+					   <th>Yn</th>
+			     </tr>
+				 </thead>
+				 <tbody id="tableBody">
+
+				 </tbody>
+
+			 	</table>
+			</code>
+		</pre>
+
+	</div>
+
+</div>
+
+<footer>
+	<p class="clear" style="text-align:center">Too lazy to use write clean js </p>
+</footer>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
